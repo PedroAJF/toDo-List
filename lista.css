@@ -1,0 +1,154 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family:Helvetica;
+  color: #333;
+  box-sizing: border-box;
+}
+
+body{
+  background-image: url("logooo.jpg") ;
+  background-position: center;
+  
+}
+button{
+  background-color: #FDFDFD ;
+  border-radius: 1px;
+  color: #102F5e;
+  border: 2px solid #05362880;
+  padding: .3rem .6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .04s;
+}
+button:hover{
+  background-color: #214d8f;
+  color: white;
+}
+button:hover >i{
+  color: white;
+}
+.remove-todo:hover{
+  background-color: rgb(212, 32, 32);
+}
+.finish-todo:hover{
+  background-color: green;
+}
+#cancel-edit-btn{
+  font-size: 12px;
+}
+
+
+button i{
+  font-weight: bold;
+  color: #102F5e;
+  pointer-events: none;
+}
+
+input,
+select{
+padding: 0.25rem, 0.5rem;
+}
+.hide{
+  display: none;
+}
+
+/*ToDO Header*/
+.todo-container{
+  max-width: 450px;
+  margin: 3rem auto 0;
+  background-color: #FDFDFD;
+}
+.todo-container header{
+  text-align: center;
+  padding: 0 1rem 1rem;
+  border-bottom: 1px solid #ccc;
+}
+/*ToDO Form */
+#todo-form, 
+#edit-form{
+  padding:1rem ;
+  border-bottom: 1px solid #ccc;
+}
+#todo-form p, 
+#edit-form p{
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.form-control{
+  display: flex;
+}
+.form-control input{
+  margin-top: .3rem;
+}
+
+
+/* Toolbar*/
+#toolbar{
+ padding: 1rem;
+ border-bottom: 1px solid #ccc;
+ display: flex;
+}
+#tollbar h4{
+  margin-bottom: .5rem;
+  
+}
+
+#search{
+  border-right: 1px solid #DDD;
+  padding-right: 1rem;
+  margin-right: 1rem;
+  width: 65%;
+  display: flex;
+  flex-direction:column ;
+}
+#search form{
+  display: flex;
+}
+#search input{
+ width: 100%;
+ margin-right: 0.3rem;
+}
+
+#filter{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+#filter select{
+  flex: 1;
+}
+
+/*ToDO List*/
+.todo,
+.outro{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #DDD;
+  transition: .3s;
+}
+.todo h3,
+.outro h3{
+  flex: 1;
+  font-size: 0.9rem;
+}
+
+.todo button,
+.outro button{
+  margin-left: 0.4rem;
+}
+
+.done{
+  background-color: #395169;
+}
+.done h3{
+  color: #ccc;
+  text-decoration: line-through;
+  font-style: italic;
+}
+
